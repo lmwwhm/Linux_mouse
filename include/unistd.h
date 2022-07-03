@@ -149,6 +149,10 @@
 #define __NR_coushu	89
 #define __NR_sleep	90
 #define __NR_getcwd	91
+#define __NR_initgraph	92
+#define __NR_getmessage	93
+#define __NR_createtime	94
+#define __NR_paint	95
 #define _syscall0(type,name) \
 type name(void) \
 { \
