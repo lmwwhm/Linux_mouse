@@ -12,7 +12,7 @@ void post_message(int type){
 		msg_que_rear = (msg_que_rear + 1) % 1024;
 	}
 }
-void sys_getmessage(struct message *msg) {
+void sys_get_message(struct message *msg) {
     struct message tmp;
 	if(msg_que_rear == msg_que_fron){
 		put_fs_long(-1,&msg->mid);

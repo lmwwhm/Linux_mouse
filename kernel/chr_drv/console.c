@@ -336,7 +336,7 @@ static void respond(struct tty_struct * tty)
 }
 
 static void insert_char(void)
-{
+{ 
 	int i=x;
 	unsigned short tmp, old = video_erase_char;
 	unsigned short * p = (unsigned short *) pos;

@@ -314,7 +314,7 @@ struct user_timer{
 
 struct user_timer * user_timer_list = NULL;
 
-int sys_createtime(long ms, int type)
+int sys_timercreate(long ms, int type)
 {
 	struct user_timer * timer = malloc(sizeof(struct user_timer));
 	long jiffies = ms / 10;

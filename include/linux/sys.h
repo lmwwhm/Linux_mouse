@@ -94,10 +94,10 @@ extern int sys_getdents();
 extern int sys_coushu();
 extern int sys_sleep();
 extern long sys_getcwd();
-extern int sys_initgraph();
-extern void sys_getmessage();
-extern int sys_createtime();
-extern int sys_paint();
+extern int sys_initgraphics();
+extern void sys_get_message();
+extern int sys_timercreate();
+extern int sys_paintrect();
 
 fn_ptr sys_call_table[] = { sys_setup, sys_exit, sys_fork, sys_read,
 sys_write, sys_open, sys_close, sys_waitpid, sys_creat, sys_link,
@@ -115,8 +115,8 @@ sys_setreuid,sys_setregid, sys_sigsuspend, sys_sigpending, sys_sethostname,
 sys_setrlimit, sys_getrlimit, sys_getrusage, sys_gettimeofday, 
 sys_settimeofday, sys_getgroups, sys_setgroups, sys_select, sys_symlink,
 sys_lstat, sys_readlink, sys_uselib ,sys_execve2,sys_getdents,sys_coushu,
-sys_sleep,sys_getcwd, sys_initgraph,sys_getmessage,sys_createtime, 
-sys_paint };
+sys_sleep,sys_getcwd, sys_initgraphics,sys_get_message,sys_timercreate, 
+sys_paintrect };
 
 /* So we don't have to do any more manual updating.... */
 int NR_syscalls = sizeof(sys_call_table)/sizeof(fn_ptr);

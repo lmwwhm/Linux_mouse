@@ -420,7 +420,7 @@ void readmouse(int mousecode)
 			++mouse_input_count;
 			#ifdef CK_DEBUG
 			printk("read 3 byte\n");
-			#endif
+			#endif 
 			break;
 		case 4: // 处理第四个字，计算鼠标在z轴上的位置
 			mouse_z_position += (int)(mousecode);

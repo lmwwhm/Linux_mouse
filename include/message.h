@@ -6,7 +6,7 @@ struct message{
 } message;
 extern struct message msg_que[1024];
 extern void post_message(int type);
-extern void sys_getmessage(struct message *msg);
+extern void sys_get_message(struct message *msg);
 
 // mid取值
 #define MSG_MOUSE_LEFT_DOWN 1
