@@ -357,7 +357,7 @@ static unsigned char mouse_input_count = 0; // 用来记录是鼠标输入的第
 static unsigned char mouse_left_down; // 左键按下标志，1表示按下了左键
 static unsigned char mouse_right_down; // 右键按下标志，1表示按下了左键
 static unsigned char mouse_center_down; // 中键按下标志，1表示按下了左键
-										// 保留位，总为1
+										
 static unsigned char mouse_x_sign; // x符号标志位，1表示x位移量位负（向左为负、向右为正）
 static unsigned char mouse_y_sign; // y符号标志位，1表示x位移量位负（向上为正、向下为负）
 static unsigned char mouse_x_overflow; // x溢出标志位，1表示x位移量溢出

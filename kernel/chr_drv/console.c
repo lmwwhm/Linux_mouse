@@ -694,7 +694,7 @@ void con_init(void)
 	outb_p(0xF4,0x60); // 设置鼠标，允许鼠标向主机自动发送数据包
 	outb_p(0x60,0x64); // 接下来给0x60的命令是给i842的
 	outb_p(0x47,0x60); // 设置i842寄存器，允许鼠标接口及其中断
-	set_trap_gate(0x2c,&mouse_interrupt); // 注册鼠标中断
+	set_trap_gate(0x2c,&mouse_interrupt); // 鼠标中断
 	// 向8259A发送OCW来打开屏蔽
 	outb_p(inb_p(0x21)&0xFB,0x21);
 	outb_p(inb_p(0xA1)&0xEF,0xA1);
